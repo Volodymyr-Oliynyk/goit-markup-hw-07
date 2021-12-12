@@ -1,4 +1,4 @@
-:root {
+/* :root {
   --primary-color: #212121;
   --primary-shade-color: #757575;
   --secondary-color: #ffffff;
@@ -893,4 +893,4 @@ body {
 .form-check:checked + .check-text span {
   background-color: var(--accent-color);
   border: none;
-}
+} */

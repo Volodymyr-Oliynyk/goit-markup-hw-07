@@ -1,0 +1,43 @@
+.skills-list {
+  display: flex;
+  margin: 0 auto;
+}
+
+.skills-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.skill-background {
+  padding: 25px 100px;
+
+  border-radius: 4px;
+
+  background: var(--secondary-background-color);
+}
+
+.skills-icon {
+  display: block;
+}
+
+.skill-title {
+  margin-top: 30px;
+  margin-bottom: 10px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--primary-color);
+}
+
+.skill-text {
+  max-width: 270px;
+
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+
+  color: var(--primary-shade-color);
+}

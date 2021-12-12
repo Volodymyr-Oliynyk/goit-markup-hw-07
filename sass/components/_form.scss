@@ -1,0 +1,127 @@
+.input-field {
+  margin-bottom: 10px;
+}
+
+.label-text {
+  display: block;
+  font-size: 12px;
+  line-height: 1.16;
+
+  letter-spacing: 0.01em;
+  margin-bottom: 4px;
+  color: var(--primary-shade-color);
+}
+
+.input-grup-absolute {
+  position: relative;
+}
+
+.form-input {
+  width: 100%;
+  height: 40px;
+
+  padding: 11px 42px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  outline: none;
+  background-color: transparent;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+}
+
+.user-name-icon {
+  position: absolute;
+  top: 50%;
+  left: 3%;
+  fill: var(--primary-color);
+  transform: translateY(-50%);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.textarea-field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.user-text {
+  min-height: 120px;
+  padding: 12px 16px;
+  resize: none;
+
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+
+  color: rgba(117, 117, 117, 0.5);
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  outline: none;
+  background-color: transparent;
+}
+
+.user-text::placeholder {
+  color: rgba(117, 117, 117, 0.5);
+}
+
+.form-input:hover + .user-name-icon,
+.form-input:focus + .user-name-icon {
+  fill: var(--accent-color);
+}
+
+.form-input:hover,
+.form-input:focus,
+.user-text:hover,
+.user-text:focus {
+  border-color: var(--accent-color);
+}
+
+.check-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  line-height: 1.71;
+
+  letter-spacing: 0.03em;
+
+  color: var(--primary-shade-color);
+}
+
+.form-check {
+  visibility: hidden;
+}
+
+.check-text {
+  span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 16px;
+    height: 15px;
+    border: 2px solid rgba(33, 33, 33, 1);
+    border-radius: 2px;
+    margin-right: 6px;
+  }
+}
+
+.checkbox-field {
+  display: flex;
+  margin-bottom: 30px;
+  a {
+    color: var(--accent-color);
+  }
+}
+
+.icon-check {
+  fill: var(--secondary-color);
+}
+
+.form-check:checked + .check-text span {
+  background-color: var(--accent-color);
+  border: none;
+}

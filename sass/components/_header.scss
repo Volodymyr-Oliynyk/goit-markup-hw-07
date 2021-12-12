@@ -1,0 +1,44 @@
+.header {
+  border-bottom: 1px solid var(--primary-border-color);
+}
+
+.primary-header {
+  display: flex;
+  align-items: center;
+}
+
+.contact-list {
+  display: flex;
+  margin-left: auto;
+}
+
+.contact-list .contact-item + .contact-item {
+  margin-left: 50px;
+}
+
+.contact-item {
+  display: flex;
+}
+
+.contact-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  color: var(--primary-shade-color);
+}
+
+.contact-link:hover,
+.contact-link:focus {
+  color: var(--accent-color);
+}
+
+.contact-icon {
+  margin-right: 10px;
+  fill: currentColor;
+}

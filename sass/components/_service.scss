@@ -1,0 +1,47 @@
+.service {
+  padding-top: 0;
+}
+
+.section-title {
+  margin-bottom: 50px;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--primary-color);
+}
+
+.service-list {
+  display: flex;
+}
+
+.service-item:not(:last-child) {
+  margin-right: 30px;
+}
+.service-block {
+  position: relative;
+}
+
+.service-title-position {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  background-color: var(--background-color-servis-block);
+}
+
+.service-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--secondary-color);
+}

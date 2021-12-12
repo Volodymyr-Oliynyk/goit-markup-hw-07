@@ -1,0 +1,139 @@
+.footer {
+  background-color: var(--primary-background-color);
+}
+.social-conection {
+  display: flex;
+  align-items: center;
+  text-align: left;
+
+  padding: 60px 15px;
+  margin: 0 auto;
+}
+
+.address {
+  margin-top: 20px;
+}
+
+.address-link {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+
+  color: var(--secondary-color);
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.address-link:hover,
+.address-link:focus {
+  color: var(--accent-color);
+}
+
+.address-item {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+
+  color: var(--address-shade-color);
+}
+
+.address-item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.contact-link-bottom {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  color: var(--primary-shade-color);
+}
+
+.contact-link-bottom:hover,
+.contact-link-bottom:focus {
+  color: var(--accent-color);
+}
+
+.footer-social-container {
+  margin-left: 70px;
+}
+
+.footer-item-title {
+  margin-bottom: 20px;
+  margin-right: auto;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--secondary-color);
+}
+.footer-social-list {
+  display: flex;
+}
+
+.footer-social-item {
+  width: 44px;
+  height: 44px;
+}
+
+.footer-social-item + .footer-social-item {
+  margin-left: 10px;
+}
+
+.footer-social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: rgba(255, 255, 255, 0.1);
+  color: var(--secondary-color);
+}
+
+.footer-social-link:hover,
+.footer-social-link:focus {
+  background-color: var(--accent-color);
+}
+
+.footer-social-icon {
+  fill: currentColor;
+}
+
+.footer-user-mail {
+  width: 358px;
+  padding: 15px 16px;
+  margin-right: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+
+  color: rgba(255, 255, 255, 0.6);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+
+  background-color: transparent;
+}
+
+.footer-form-box {
+  margin-left: auto;
+}
+
+.footer-form {
+  display: flex;
+}
+
+.footer-icon-send {
+  margin-left: 10px;
+  fill: currentColor;
+}
