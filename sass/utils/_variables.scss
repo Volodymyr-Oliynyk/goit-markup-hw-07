@@ -1,26 +1,17 @@
 $primary-color: #212121;
 $primary-shade-color: #757575;
 $primary-background-color: #2f303a;
+$primary-border-color: #ececec;
 $secondary-color: #ffffff;
 $secondary-shade-color: #f5f4fa;
+$secondary-background-color: #f5f4fa;
+$secondary-border-color: #eeeeee;
 $accent-color: #2196f3;
-
-:root {
-  // --primary-color: #212121;
-  // --primary-shade-color: #757575;
-  // --secondary-color: #ffffff;
-  // --secondary-shade-color: #f5f4fa;
-  // --accent-color: #2196f3;
-  // --primary-background-color: #2f303a;
-  --secondary-background-color: #f5f4fa;
-  --address-shade-color: rgba(255, 255, 255, 0.6);
-  --primary-border-color: #ececec;
-  --secondary-border-color: #eeeeee;
-  --icon-color: #afb1b8;
-  --client-shade-color: rgba(0, 0, 0, 0, 25);
-  --backgraund-color-wrap: rgba(33, 150, 243, 0.9);
-  --background-color-servis-block: rgba(47, 48, 58, 0.8);
-}
+$address-shade-color: rgba(255, 255, 255, 0.6);
+$icon-color: #afb1b8;
+$backgraund-color-wrap: rgba(33, 150, 243, 0.9);
+$background-color-servis-block: rgba(47, 48, 58, 0.8);
+// $client-shade-color: rgba(0, 0, 0, 0, 25);
 
 img {
   display: block;
