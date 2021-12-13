@@ -35,9 +35,9 @@
   line-height: 1.71;
   letter-spacing: 0.03em;
 
-
-.address-item:not(:last-child) {
-  margin-bottom: 9px;
+  .address-item:not(:last-child) {
+    margin-bottom: 9px;
+  }
 }
 
 .contact-link-bottom {
@@ -72,6 +72,7 @@
 
   color: $secondary-color;
 }
+
 .footer-social-list {
   display: flex;
 }

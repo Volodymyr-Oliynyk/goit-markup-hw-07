@@ -1,20 +1,3 @@
-:root {
-  --primary-color: #212121;
-  --primary-shade-color: #757575;
-  --secondary-color: #ffffff;
-  --secondary-shade-color: #f5f4fa;
-  --accent-color: #2196f3;
-  --primary-background-color: #2f303a;
-  --secondary-background-color: #f5f4fa;
-  --address-shade-color: rgba(255, 255, 255, 0.6);
-  --primary-border-color: #ececec;
-  --secondary-border-color: #eeeeee;
-  --icon-color: #afb1b8;
-  --client-shade-color: rgba(0, 0, 0, 0, 25);
-  --backgraund-color-wrap: rgba(33, 150, 243, 0.9);
-  --background-color-servis-block: rgba(47, 48, 58, 0.8);
-}
-
 img {
   display: block;
   max-width: 100%;
@@ -26,9 +9,9 @@ img {
 }
 
 body {
-  background-color: var(--secondary-color);
+  background-color: #ffffff;
   font-family: Roboto, sans-serif;
-  color: var(--primary-color);
+  color: #212121;
 }
 
 p,
@@ -78,9 +61,9 @@ button {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
-  color: var(--secondary-color);
+  color: #ffffff;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  background-color: var(--accent-color);
+  background-color: #2196f3;
 }
 
 .secondary-button {
@@ -101,15 +84,15 @@ button {
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  color: var(--primary-color);
+  color: #212121;
 }
 
 .logo .logo-web {
-  color: var(--accent-color);
+  color: #2196f3;
 }
 
 .logo-white {
-  color: var(--secondary-shade-color);
+  color: #f5f4fa;
 }
 
 .nav {
@@ -119,11 +102,11 @@ button {
 
 .nav .nav-list {
   display: flex;
-  color: var(--primary-color);
+  color: #212121;
 }
 
 .nav-list .current {
-  color: var(--accent-color);
+  color: #2196f3;
 }
 
 .nav-item:not(:last-child) {
@@ -137,13 +120,13 @@ button {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: var(--primary-color);
+  color: #212121;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
 }
 
 .nav-link:hover, .nav-link:focus {
-  color: var(--accent-color);
+  color: #2196f3;
 }
 
 .nav-link .current::after {
@@ -151,14 +134,14 @@ button {
   width: 100%;
   height: 4px;
   border-radius: 2px;
-  background-color: var(--accent-color);
+  background-color: #2196f3;
   position: absolute;
   left: 0;
   bottom: -1px;
 }
 
 .header {
-  border-bottom: 1px solid var(--primary-border-color);
+  border-bottom: 1px solid #ececec;
 }
 
 .primary-header {
@@ -188,12 +171,12 @@ button {
   line-height: 1.14;
   letter-spacing: 0.02em;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  color: var(--primary-shade-color);
+  color: #757575;
 }
 
 .contact-link:hover,
 .contact-link:focus {
-  color: var(--accent-color);
+  color: #2196f3;
 }
 
 .contact-icon {
@@ -219,7 +202,7 @@ button {
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: var(--secondary-color);
+  color: #ffffff;
 }
 
 .skills-list {
@@ -234,7 +217,7 @@ button {
 .skill-background {
   padding: 25px 100px;
   border-radius: 4px;
-  background: var(--secondary-background-color);
+  background: #f5f4fa;
 }
 
 .skills-icon {
@@ -249,7 +232,7 @@ button {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--primary-color);
+  color: #212121;
 }
 
 .skill-text {
@@ -257,7 +240,7 @@ button {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: var(--primary-shade-color);
+  color: #757575;
 }
 
 .service {
@@ -271,7 +254,7 @@ button {
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
-  color: var(--primary-color);
+  color: #212121;
 }
 
 .service-list {
@@ -293,7 +276,7 @@ button {
   width: 100%;
   padding-top: 27px;
   padding-bottom: 27px;
-  background-color: var(--background-color-servis-block);
+  background-color: rgba(47, 48, 58, 0.8);
 }
 
 .service-title {
@@ -303,11 +286,11 @@ button {
   text-align: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--secondary-color);
+  color: #ffffff;
 }
 
 .team {
-  background-color: var(--secondary-background-color);
+  background-color: #f5f4fa;
 }
 
 .team-list {
@@ -327,7 +310,7 @@ button {
   text-align: center;
   padding: 30px 0;
   border-radius: 0px 0px 4px 4px;
-  background-color: var(--secondary-color);
+  background-color: #ffffff;
 }
 
 .teammate-name {
@@ -336,7 +319,7 @@ button {
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  color: var(--primary-color);
+  color: #212121;
 }
 
 .teammate-position {
@@ -344,7 +327,7 @@ button {
   font-size: 16px;
   line-height: 19px;
   letter-spacing: 0.03em;
-  color: var(--primary-shade-color);
+  color: #757575;
 }
 
 .temmate-social-list {
@@ -363,15 +346,15 @@ button {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  color: var(--icon-color);
-  background-color: var(--secondary-color);
+  color: #afb1b8;
+  background-color: #ffffff;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .temmate-social-link:hover,
 .temmate-social-link:focus {
-  color: var(--secondary-color);
-  background-color: var(--accent-color);
+  color: #ffffff;
+  background-color: #2196f3;
 }
 
 .temmate-social-icon {
@@ -401,8 +384,8 @@ button {
 
 .client-link:hover,
 .client-link:focus {
-  color: var(--accent-color);
-  border-color: var(--accent-color);
+  color: #2196f3;
+  border-color: #2196f3;
 }
 
 .client-icon {
@@ -422,9 +405,9 @@ button {
 .filter-item :hover,
 .filter-item :focus,
 .filter-item :active {
-  color: var(--secondary-color);
+  color: #ffffff;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-  background-color: var(--accent-color);
+  background-color: #2196f3;
 }
 
 .project-list {
@@ -459,7 +442,7 @@ button {
   font-size: 18px;
   line-height: 1.55;
   letter-spacing: 0.03em;
-  color: var(--secondary-color);
+  color: #ffffff;
 }
 
 .project-text-position {
@@ -471,14 +454,14 @@ button {
   left: 0;
   transform: translateY(100%);
   transition: transform 250ms;
-  background-color: var(--backgraund-color-wrap);
+  background-color: rgba(33, 150, 243, 0.9);
 }
 
 .project-backgraung {
   padding: 20px 24px;
-  border: 1px solid var(--secondary-border-color);
+  border: 1px solid #eeeeee;
   border-top: none;
-  background-color: var(--secondary-color);
+  background-color: #ffffff;
 }
 
 .project-title {
@@ -487,18 +470,18 @@ button {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  color: var(--primary-color);
+  color: #212121;
 }
 
 .project-text {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
-  color: var(--primary-shade-color);
+  color: #757575;
 }
 
 .footer {
-  background-color: var(--primary-background-color);
+  background-color: #2f303a;
 }
 
 .social-conection {
@@ -517,13 +500,13 @@ button {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: var(--secondary-color);
+  color: #ffffff;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .address-link:hover,
 .address-link:focus {
-  color: var(--accent-color);
+  color: #2196f3;
 }
 
 .address-item {
@@ -531,10 +514,9 @@ button {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: var(--address-shade-color);
 }
 
-.address-item:not(:last-child) {
+.address-item .address-item:not(:last-child) {
   margin-bottom: 9px;
 }
 
@@ -545,12 +527,12 @@ button {
   line-height: 1.14;
   letter-spacing: 0.02em;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  color: var(--primary-shade-color);
+  color: #757575;
 }
 
 .contact-link-bottom:hover,
 .contact-link-bottom:focus {
-  color: var(--accent-color);
+  color: #2196f3;
 }
 
 .footer-social-container {
@@ -565,7 +547,7 @@ button {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--secondary-color);
+  color: #ffffff;
 }
 
 .footer-social-list {
@@ -590,12 +572,12 @@ button {
   border-radius: 50%;
   transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
   background-color: rgba(255, 255, 255, 0.1);
-  color: var(--secondary-color);
+  color: #ffffff;
 }
 
 .footer-social-link:hover,
 .footer-social-link:focus {
-  background-color: var(--accent-color);
+  background-color: #2196f3;
 }
 
 .footer-social-icon {
@@ -658,7 +640,7 @@ button {
   width: 528px;
   min-height: 100px;
   border-radius: 4px;
-  background-color: var(--secondary-color);
+  background-color: #ffffff;
 }
 
 .modal-button {
@@ -675,13 +657,13 @@ button {
 }
 
 .modal-icon-button {
-  fill: var(--primary-color);
+  fill: #212121;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-icon-button:hover,
 .modal-icon-button:focus {
-  fill: var(--accent-color);
+  fill: #2196f3;
 }
 
 .modal-title {
@@ -691,7 +673,7 @@ button {
   text-align: center;
   letter-spacing: 0.03em;
   margin-bottom: 12px;
-  color: var(--primary-color);
+  color: #212121;
 }
 
 .input-field {
@@ -704,7 +686,7 @@ button {
   line-height: 1.16;
   letter-spacing: 0.01em;
   margin-bottom: 4px;
-  color: var(--primary-shade-color);
+  color: #757575;
 }
 
 .input-grup-absolute {
@@ -727,7 +709,7 @@ button {
   position: absolute;
   top: 50%;
   left: 3%;
-  fill: var(--primary-color);
+  fill: #212121;
   transform: translateY(-50%);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -760,14 +742,14 @@ button {
 
 .form-input:hover + .user-name-icon,
 .form-input:focus + .user-name-icon {
-  fill: var(--accent-color);
+  fill: #2196f3;
 }
 
 .form-input:hover,
 .form-input:focus,
 .user-text:hover,
 .user-text:focus {
-  border-color: var(--accent-color);
+  border-color: #2196f3;
 }
 
 .check-text {
@@ -777,7 +759,7 @@ button {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: var(--primary-shade-color);
+  color: #757575;
 }
 
 .form-check {
@@ -801,15 +783,15 @@ button {
 }
 
 .checkbox-field a {
-  color: var(--accent-color);
+  color: #2196f3;
 }
 
 .icon-check {
-  fill: var(--secondary-color);
+  fill: #ffffff;
 }
 
 .form-check:checked + .check-text span {
-  background-color: var(--accent-color);
+  background-color: #2196f3;
   border: none;
 }
 /*# sourceMappingURL=main.css.map */
