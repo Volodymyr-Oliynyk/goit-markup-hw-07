@@ -11,7 +11,7 @@
   text-align: center;
   letter-spacing: 0.03em;
 
-  color: var(--primary-color);
+  color: $primary-color;
 }
 
 .service-list {
@@ -43,5 +43,5 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
 
-  color: var(--secondary-color);
+  color: $secondary-color;
 }

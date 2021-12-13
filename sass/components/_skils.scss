@@ -29,7 +29,7 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
 
-  color: var(--primary-color);
+  color: $primary-color;
 }
 
 .skill-text {
@@ -39,5 +39,5 @@
   line-height: 1.71;
   letter-spacing: 0.03em;
 
-  color: var(--primary-shade-color);
+  color: $primary-shade-color;
 }

@@ -5,13 +5,13 @@
   line-height: 1.19;
   letter-spacing: 0.03em;
 
-  color: var(--primary-color);
+  color: $primary-color;
 
   .logo-web {
-    color: var(--accent-color);
+    color: $accent-color;
   }
 }
 
 .logo-white {
-  color: var(--secondary-shade-color);
+  color: $secondary-shade-color;
 }

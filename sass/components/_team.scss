@@ -21,7 +21,7 @@
 
   border-radius: 0px 0px 4px 4px;
 
-  background-color: var(--secondary-color);
+  background-color: $secondary-color;
 }
 
 .teammate-name {
@@ -32,7 +32,7 @@
   line-height: 1.19;
   letter-spacing: 0.03em;
 
-  color: var(--primary-color);
+  color: $primary-color;
 }
 
 .teammate-position {
@@ -42,7 +42,7 @@
   line-height: 19px;
   letter-spacing: 0.03em;
 
-  color: var(--primary-shade-color);
+  color: $primary-shade-color;
 }
 
 .temmate-social-list {
@@ -64,15 +64,15 @@
   border-radius: 50%;
 
   color: var(--icon-color);
-  background-color: var(--secondary-color);
+  background-color: $secondary-color;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .temmate-social-link:hover,
 .temmate-social-link:focus {
-  color: var(--secondary-color);
-  background-color: var(--accent-color);
+  color: $secondary-color;
+  background-color: $accent-color;
 }
 
 .temmate-social-icon {

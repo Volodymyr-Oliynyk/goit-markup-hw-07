@@ -30,7 +30,7 @@
   min-height: 100px;
   border-radius: 4px;
 
-  background-color: var(--secondary-color);
+  background-color: $secondary-color;
 }
 
 .modal-button {
@@ -48,13 +48,13 @@
 }
 
 .modal-icon-button {
-  fill: var(--primary-color);
+  fill: $primary-color;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-icon-button:hover,
 .modal-icon-button:focus {
-  fill: var(--accent-color);
+  fill: $accent-color;
 }
 
 .modal-title {
@@ -66,5 +66,5 @@
 
   margin-bottom: 12px;
 
-  color: var(--primary-color);
+  color: $primary-color;
 }

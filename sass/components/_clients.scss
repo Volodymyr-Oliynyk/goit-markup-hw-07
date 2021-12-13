@@ -23,8 +23,8 @@
 
 .client-link:hover,
 .client-link:focus {
-  color: var(--accent-color);
-  border-color: var(--accent-color);
+  color: $accent-color;
+  border-color: $accent-color;
 }
 
 .client-icon {

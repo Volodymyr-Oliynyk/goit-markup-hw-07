@@ -1,10 +1,17 @@
+$primary-color: #212121;
+$primary-shade-color: #757575;
+$primary-background-color: #2f303a;
+$secondary-color: #ffffff;
+$secondary-shade-color: #f5f4fa;
+$accent-color: #2196f3;
+
 :root {
-  --primary-color: #212121;
-  --primary-shade-color: #757575;
-  --secondary-color: #ffffff;
-  --secondary-shade-color: #f5f4fa;
-  --accent-color: #2196f3;
-  --primary-background-color: #2f303a;
+  // --primary-color: #212121;
+  // --primary-shade-color: #757575;
+  // --secondary-color: #ffffff;
+  // --secondary-shade-color: #f5f4fa;
+  // --accent-color: #2196f3;
+  // --primary-background-color: #2f303a;
   --secondary-background-color: #f5f4fa;
   --address-shade-color: rgba(255, 255, 255, 0.6);
   --primary-border-color: #ececec;
@@ -26,7 +33,7 @@ img {
 }
 
 body {
-  background-color: var(--secondary-color);
+  background-color: $secondary-color;
   font-family: Roboto, sans-serif;
-  color: var(--primary-color);
+  color: $primary-color;
 }
