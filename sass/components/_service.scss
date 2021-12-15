@@ -2,26 +2,15 @@
   padding-top: 0;
 }
 
-.section-title {
-  margin-bottom: 50px;
-
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  letter-spacing: 0.03em;
-
-  color: $primary-color;
-}
-
-.service-list {
+.service__list {
   display: flex;
 }
 
-.service-item:not(:last-child) {
+.service__item:not(:last-child) {
   margin-right: 30px;
 }
-.service-block {
+
+.service__block {
   position: relative;
 }
 
@@ -35,12 +24,10 @@
   background-color: $background-color-servis-block;
 }
 
-.service-title {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
+.service__title {
   text-align: center;
-  letter-spacing: 0.03em;
+  @include font(700, 14px, 1.14, 0.03em);
+
   text-transform: uppercase;
 
   color: $secondary-color;

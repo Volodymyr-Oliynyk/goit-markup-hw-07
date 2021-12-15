@@ -13,14 +13,17 @@ $backgraund-color-wrap: rgba(33, 150, 243, 0.9);
 $background-color-servis-block: rgba(47, 48, 58, 0.8);
 // $client-shade-color: rgba(0, 0, 0, 0, 25);
 
+@mixin font($fw, $fs, $lh, $ls) {
+  font-weight: $fw;
+  font-size: $fs;
+  line-height: $lh;
+  letter-spacing: $ls;
+}
+
 img {
   display: block;
   max-width: 100%;
   height: auto;
-}
-
-.section {
-  padding: 94px 0;
 }
 
 body {

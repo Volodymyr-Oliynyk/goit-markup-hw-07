@@ -3,7 +3,7 @@ button {
   border-radius: 4px;
   cursor: pointer;
 }
-.primary-button {
+.primary__button {
   display: flex;
   text-align: center;
   align-items: center;
@@ -15,25 +15,19 @@ button {
   padding: 10px 32px;
 
   font-family: inherit;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
-  letter-spacing: 0.06em;
-  color: $secondary-color;
+  @include font(700, 16px, 1.88, 0.06em);
 
+  color: $secondary-color;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   background-color: $accent-color;
 }
 
-.secondary-button {
+.secondary__button {
   padding: 6px 22px;
+  text-align: center;
 
   font-family: inherit;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.63;
-  text-align: center;
-  letter-spacing: 0.03em;
+  @include font(500, 16px, 1.63, 0.03em);
 
   color: var(--primary-color);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),

@@ -2,12 +2,10 @@
   margin-bottom: 10px;
 }
 
-.label-text {
+.form__label {
   display: block;
-  font-size: 12px;
-  line-height: 1.16;
+  @include font(400, 12px, 1.16, 0.01em);
 
-  letter-spacing: 0.01em;
   margin-bottom: 4px;
   color: $primary-shade-color;
 }
@@ -16,7 +14,7 @@
   position: relative;
 }
 
-.form-input {
+.form__input {
   width: 100%;
   height: 40px;
 
@@ -27,9 +25,17 @@
   background-color: transparent;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
+  &:hover,
+  &:focus {
+    border-color: $accent-color;
+  }
+  &:hover + .form__icon,
+  &:focus + .form__icon {
+    fill: $accent-color;
+  }
 }
 
-.user-name-icon {
+.form__icon {
   position: absolute;
   top: 50%;
   left: 3%;
@@ -38,14 +44,14 @@
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.textarea-field {
+.textarea__field {
   display: flex;
   flex-direction: column;
   margin-bottom: 20px;
   cursor: pointer;
 }
 
-.user-text {
+.textarea__text {
   min-height: 120px;
   padding: 12px 16px;
   resize: none;
@@ -61,41 +67,30 @@
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
   outline: none;
   background-color: transparent;
+
+  &::placeholder {
+    color: rgba(117, 117, 117, 0.5);
+  }
+  &:hover,
+  &:focus {
+    border-color: $accent-color;
+  }
 }
 
-.user-text::placeholder {
-  color: rgba(117, 117, 117, 0.5);
-}
-
-.form-input:hover + .user-name-icon,
-.form-input:focus + .user-name-icon {
-  fill: $accent-color;
-}
-
-.form-input:hover,
-.form-input:focus,
-.user-text:hover,
-.user-text:focus {
-  border-color: $accent-color;
-}
-
-.check-text {
+.check__label {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 14px;
-  line-height: 1.71;
-
-  letter-spacing: 0.03em;
+  @include font(400, 14px, 1.71, 0.03em);
 
   color: $primary-shade-color;
 }
 
-.form-check {
+.form__check {
   visibility: hidden;
 }
 
-.check-text {
+.check__label {
   span {
     display: flex;
     justify-content: center;
@@ -117,11 +112,11 @@
   }
 }
 
-.icon-check {
+.icon__check {
   fill: $secondary-color;
 }
 
-.form-check:checked + .check-text span {
+.form__check:checked + .check__label span {
   background-color: $accent-color;
   border: none;
 }

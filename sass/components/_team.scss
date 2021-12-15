@@ -2,79 +2,39 @@
   background-color: $secondary-background-color;
 }
 
-.team-list {
+.team__list {
   display: flex;
   margin: 0 auto;
 }
-.team-item {
+
+.team__item {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
-.team-item:not(:last-child) {
-  margin-right: 30px;
-}
-
-.teammate-background {
+.teammate {
   text-align: center;
   padding: 30px 0;
 
   border-radius: 0px 0px 4px 4px;
 
   background-color: $secondary-color;
-}
 
-.teammate-name {
-  margin-bottom: 10px;
+  .teammate__name {
+    margin-bottom: 10px;
+    @include font(500, 16px, 1.19, 0.03em);
+    color: $primary-color;
+  }
 
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
+  .teammate__position {
+    margin-bottom: 16px;
 
-  color: $primary-color;
-}
+    @include font(400, 16px, 1.19, 0.03em);
 
-.teammate-position {
-  margin-bottom: 16px;
-
-  font-size: 16px;
-  line-height: 19px;
-  letter-spacing: 0.03em;
-
-  color: $primary-shade-color;
-}
-
-.temmate-social-list {
-  display: flex;
-  justify-content: center;
-}
-
-.temmate-social-item + .temmate-social-item {
-  margin-left: 10px;
-}
-
-.temmate-social-link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-
-  color: $icon-color;
-  background-color: $secondary-color;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.temmate-social-link:hover,
-.temmate-social-link:focus {
-  color: $secondary-color;
-  background-color: $accent-color;
-}
-
-.temmate-social-icon {
-  fill: currentColor;
+    color: $primary-shade-color;
+  }
 }

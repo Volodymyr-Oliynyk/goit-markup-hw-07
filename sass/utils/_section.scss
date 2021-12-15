@@ -1,0 +1,11 @@
+.section {
+  padding: 94px 0;
+}
+
+.section__title {
+  margin-bottom: 50px;
+  text-align: center;
+  @include font(700, 36px, 1.17, 0.03em);
+
+  color: $primary-color;
+}
