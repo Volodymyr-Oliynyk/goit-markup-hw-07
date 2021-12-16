@@ -3,12 +3,8 @@ button {
   border-radius: 4px;
   cursor: pointer;
 }
-.primary__button {
-  display: flex;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
 
+.primary-button {
   min-width: 200px;
   min-height: 50px;
   margin: 0 auto;
@@ -22,7 +18,22 @@ button {
   background-color: $accent-color;
 }
 
-.secondary__button {
+.primary-button--flex {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.primary-button--block {
+  display: block;
+}
+
+.primary-button__icon {
+  margin-left: 10px;
+  fill: currentColor;
+}
+.secondary-button {
   padding: 6px 22px;
   text-align: center;
 

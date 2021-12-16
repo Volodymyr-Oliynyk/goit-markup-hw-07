@@ -1,0 +1,39 @@
+.skills-list {
+  display: flex;
+  margin: 0 auto;
+
+  .skills-list__item:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  .skills-list__background {
+    padding: 25px 100px;
+
+    border-radius: 4px;
+
+    background: $secondary-background-color;
+  }
+
+  .skills-list__icon {
+    display: block;
+  }
+
+  .skills-list__title {
+    margin-top: 30px;
+    margin-bottom: 10px;
+
+    @include font(700, 14px, 1.14, 0.03em);
+
+    text-transform: uppercase;
+
+    color: $primary-color;
+  }
+
+  .skills-list__text {
+    max-width: 270px;
+
+    @include font(400, 14px, 1.71, 0.03em);
+
+    color: $primary-shade-color;
+  }
+}

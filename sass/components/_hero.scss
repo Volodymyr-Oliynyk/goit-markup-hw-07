@@ -7,19 +7,19 @@
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(../img/hero-backgraund.svg);
   background-position: center;
-}
 
-.hero-title {
-  text-align: center;
-  margin: 0 auto 30px auto;
+  .hero__title {
+    text-align: center;
+    margin: 0 auto 30px auto;
 
-  max-width: 696px;
+    max-width: 696px;
 
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
 
-  color: $secondary-color;
+    color: $secondary-color;
+  }
 }

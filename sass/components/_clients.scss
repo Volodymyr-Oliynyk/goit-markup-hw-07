@@ -1,8 +1,8 @@
-.client__list {
+.clients-list {
   display: flex;
 }
 
-.client__item {
+.clients-list__item {
   flex-basis: calc(100 / 6);
 
   &:not(:last-child) {
@@ -10,7 +10,7 @@
   }
 }
 
-.client__link {
+.clients-list__link {
   display: flex;
   padding: 16px 35px;
 
@@ -26,7 +26,7 @@
     border-color: $accent-color;
   }
 
-  .client__icon {
+  .clients-list__icon {
     fill: currentColor;
   }
 }

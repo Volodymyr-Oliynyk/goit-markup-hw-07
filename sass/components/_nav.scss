@@ -9,7 +9,7 @@
 }
 
 .nav__list {
-  .link.current {
+  .link.nav__link--current {
     color: $accent-color;
 
     &::after {

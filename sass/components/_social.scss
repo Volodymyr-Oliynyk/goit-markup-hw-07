@@ -1,13 +1,12 @@
-.social__list {
+.social-list {
   display: flex;
   justify-content: center;
-}
 
-.social__item + .social__item {
-  margin-left: 10px;
+  .social-list__item + .social-list__item {
+    margin-left: 10px;
+  }
 }
-
-.social__link {
+.social-list__link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -27,7 +26,13 @@
     background-color: $accent-color;
   }
 
-  .social__icon {
+  .social-list__icon {
     fill: currentColor;
   }
+}
+
+.social-list__link--color-secondary {
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: rgba(255, 255, 255, 0.1);
+  color: $secondary-color;
 }

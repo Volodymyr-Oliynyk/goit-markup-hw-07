@@ -31,7 +31,7 @@
   border-radius: 4px;
 
   background-color: $secondary-color;
-  .modal-title {
+  .modal__title {
     text-align: center;
     margin-bottom: 12px;
 
@@ -41,7 +41,7 @@
   }
 }
 
-.modal-button {
+.modal__button {
   position: absolute;
   display: flex;
   align-items: center;
@@ -54,7 +54,7 @@
   border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: transparent;
 
-  .modal-icon-button {
+  .modal__icon-button {
     fill: $primary-color;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     &:hover,

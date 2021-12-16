@@ -2,7 +2,7 @@
   margin-bottom: 10px;
 }
 
-.form__label {
+.label {
   display: block;
   @include font(400, 12px, 1.16, 0.01em);
 
@@ -10,11 +10,11 @@
   color: $primary-shade-color;
 }
 
-.input-grup-absolute {
+.input-group-absolute {
   position: relative;
 }
 
-.form__input {
+.input-group-absolute__input {
   width: 100%;
   height: 40px;
 
@@ -29,13 +29,13 @@
   &:focus {
     border-color: $accent-color;
   }
-  &:hover + .form__icon,
-  &:focus + .form__icon {
+  &:hover + .input-group-absolute__icon,
+  &:focus + .input-group-absolute__icon {
     fill: $accent-color;
   }
 }
 
-.form__icon {
+.input-group-absolute__icon {
   position: absolute;
   top: 50%;
   left: 3%;
@@ -44,14 +44,14 @@
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.textarea__field {
+.textarea-field {
   display: flex;
   flex-direction: column;
   margin-bottom: 20px;
   cursor: pointer;
 }
 
-.textarea__text {
+.textarea-field-input {
   min-height: 120px;
   padding: 12px 16px;
   resize: none;
@@ -77,20 +77,13 @@
   }
 }
 
-.check__label {
+.checkbox-field__label {
   display: flex;
   justify-content: center;
   align-items: center;
   @include font(400, 14px, 1.71, 0.03em);
 
   color: $primary-shade-color;
-}
-
-.form__check {
-  visibility: hidden;
-}
-
-.check__label {
   span {
     display: flex;
     justify-content: center;
@@ -104,10 +97,19 @@
   }
 }
 
+.checkbox-field__input {
+  visibility: hidden;
+}
+
+.check__label {
+}
+
 .checkbox-field {
   display: flex;
   margin-bottom: 30px;
-  a {
+
+  .checkbox-field__link {
+    margin-left: 5px;
     color: $accent-color;
   }
 }
