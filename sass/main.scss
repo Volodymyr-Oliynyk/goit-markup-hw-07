@@ -2,7 +2,9 @@
 @import './utils/reset';
 @import './utils/container';
 @import './utils/section';
-@import './utils/button';
+@import './utils/mixins';
+
+@import './components/button';
 @import './components/header';
 @import './components/logo';
 @import './components/nav';

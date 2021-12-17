@@ -8,7 +8,7 @@
   }
 }
 
-.project-list {
+.project {
   display: flex;
   flex-wrap: wrap;
 
@@ -16,7 +16,7 @@
   margin-right: -30px;
 }
 
-.project-item {
+.project__item {
   flex-basis: calc(100% / 3 - 30px);
   margin-bottom: 30px;
   margin-right: 30px;
@@ -27,24 +27,23 @@
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
       1px 4px 6px rgba(0, 0, 0, 0.16);
   }
-  &:hover .project-text-position {
+  &:hover .project__overlay {
     transform: translateY(0);
   }
 }
 
-.project-image-wrap {
+.project__image-wrap {
   position: relative;
   overflow: hidden;
 }
 
-.project-text-wrap {
-  font-size: 18px;
-  line-height: 1.55;
-  letter-spacing: 0.03em;
+.project__description {
+  @include font(400, 18px, 1.55, 0.03em);
+
   color: $secondary-color;
 }
 
-.project-text-position {
+.project__overlay {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -57,7 +56,7 @@
   background-color: $backgraund-color-wrap;
 }
 
-.project-backgraung {
+.project__backgraung {
   padding: 20px 24px;
 
   border: 1px solid $secondary-border-color;
@@ -66,19 +65,15 @@
   background-color: $secondary-color;
 }
 
-.project-title {
+.project__title {
   margin-bottom: 4px;
 
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
+  @include font(700, 18px, 2, 0.06em);
 
   color: $primary-color;
 }
-.project-text {
-  font-size: 16px;
-  line-height: 1.88;
-  letter-spacing: 0.03em;
+.project__text {
+  @include font(400, 16px, 1.88, 0.03em);
+
   color: $primary-shade-color;
 }
