@@ -19,10 +19,8 @@ button {
 }
 
 .primary-button--flex {
-  display: flex;
+  @extend %flex-center;
   text-align: center;
-  align-items: center;
-  justify-content: center;
 }
 
 .primary-button--block {

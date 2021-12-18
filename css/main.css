@@ -41,7 +41,7 @@ ul {
   padding: 94px 0;
 }
 
-.section__title {
+.section .section__title {
   margin-bottom: 50px;
   text-align: center;
   font-weight: 700;
@@ -49,6 +49,12 @@ ul {
   line-height: 1.17;
   letter-spacing: 0.03em;
   color: #212121;
+}
+
+.primary-button--flex, .contact-list__link, .social-list__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 button {
@@ -73,10 +79,7 @@ button {
 }
 
 .primary-button--flex {
-  display: flex;
   text-align: center;
-  align-items: center;
-  justify-content: center;
 }
 
 .primary-button--block {
@@ -191,9 +194,6 @@ button {
 }
 
 .contact-list__link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -359,9 +359,6 @@ button {
 }
 
 .social-list__link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 44px;
   height: 44px;
   border-radius: 50%;
