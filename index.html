@@ -22,7 +22,7 @@
   <body>
     <header class="header">
       <div class="header__container container">
-        <a href="./index.html" class="logo link"> <span class="logo__primary">Web</span>Studio</a>
+        <a href="./index.html" class="logo link"> <span class="logo__web">Web</span>Studio</a>
         <nav class="nav">
           <ul class="nav__list list">
             <li class="nav__item">
@@ -34,7 +34,7 @@
             <li class="nav__item"><a href="" class="nav__link link">Контакты</a></li>
           </ul>
         </nav>
-        <ul class="contact__list list">
+        <ul class="contact-list list">
           <li class="contact-list__item">
             <a href="mailto:info@devstudio.com" class="contact-list__link link"
               ><svg class="contact-list__icon" width="16" height="12">
@@ -63,7 +63,7 @@
         <div class="container">
           <ul class="skills-list list">
             <li class="skills-list__item">
-              <div class="skills-list__background">
+              <div class="skills-list__icon-wraper">
                 <svg class="skills-list__icon" width="70" height="70">
                   <use href="./img/icons.svg#icon-skill-antenna"></use>
                 </svg>
@@ -74,7 +74,7 @@
               </p>
             </li>
             <li class="skills-list__item">
-              <div class="skills-list__background">
+              <div class="skills-list__icon-wraper">
                 <svg class="skills-list__icon" width="70" height="70">
                   <use href="./img/icons.svg#icon-skill-clock"></use>
                 </svg>
@@ -85,7 +85,7 @@
               </p>
             </li>
             <li class="skills-list__item">
-              <div class="skills-list__background">
+              <div class="skills-list__icon-wraper">
                 <svg class="skills-list__icon" width="70" height="70">
                   <use href="./img/icons.svg#icon-skill-diagram"></use>
                 </svg>
@@ -96,7 +96,7 @@
               </p>
             </li>
             <li class="skills-list__item">
-              <div class="skills-list__background">
+              <div class="skills-list__icon-wraper">
                 <svg class="skills-list__icon" width="70" height="70">
                   <use href="./img/icons.svg#icon-skill-astronaut"></use>
                 </svg>
@@ -393,10 +393,10 @@
     </main>
 
     <footer class="footer">
-      <div class="social-conection container">
+      <div class="footer-container container">
         <div class="footer__address">
-          <a href="./index.html" class="logo logo__secondary link"
-            ><span class="logo__primary">Web</span>Studio</a
+          <a href="./index.html" class="logo logo--secondary link"
+            ><span class="logo__web">Web</span>Studio</a
           >
           <address class="address">
             <ul class="address__list list">
@@ -453,14 +453,14 @@
           </ul>
         </div>
 
-        <div class="footer__form">
+        <div class="subscribe__form">
           <h3 class="footer__title">Подпишитесь на рассылку</h3>
-          <form action="#" class="footer-form">
+          <form action="#" class="subscribe-form">
             <input
               type="email"
               name="footer-user-mail"
               placeholder="E-mail"
-              class="footer-form__input"
+              class="subscribe__input"
             />
 
             <button type="submit" class="primary-button primary-button--flex">
@@ -476,8 +476,8 @@
     <!-- Modal window -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button class="modal__button" data-modal-close>
-          <svg class="modal__icon-button" width="18" height="18">
+        <button class="close__button" data-modal-close>
+          <svg class="close__icon-button" width="18" height="18">
             <use href="./img/icons.svg#close-black"></use>
           </svg>
         </button>
@@ -546,8 +546,8 @@
           <div class="checkbox-field">
             <input type="checkbox" name="policy" id="label-check" class="checkbox-field__input" />
             <label for="label-check" class="checkbox-field__label">
-              <span>
-                <svg class="check__icon" width="16" height="15">
+              <span class="checkbox-field__icon-wraper">
+                <svg class="checkbox-field__icon" width="16" height="15">
                   <use href="./img/icons.svg#form-vector"></use>
                 </svg>
               </span>
@@ -555,7 +555,7 @@
               <a href="_" target="_blank" class="checkbox-field__link">Условия договора</a>
             </label>
           </div>
-          <button type="submit" class="primary-button primary-button--block">Отправить</button>
+          <button type="submit" class="primary-button">Отправить</button>
         </form>
       </div>
     </div>

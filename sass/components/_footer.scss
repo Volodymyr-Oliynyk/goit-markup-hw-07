@@ -2,7 +2,7 @@
   background-color: $primary-background-color;
   padding: 60px 15px;
 
-  .social-conection {
+  .footer-container {
     display: flex;
     align-items: center;
   }
@@ -22,25 +22,25 @@
   color: $secondary-color;
 }
 
-.footer-form__input {
+.subscribe__input {
   width: 358px;
   padding: 15px 16px;
   margin-right: 12px;
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  border: 1px solid rgba($secondary-color, 0.3);
   border-radius: 4px;
 
   @include font(400, 16px, 1.25, 0.03em);
 
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba($secondary-color, 0.6);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 
   background-color: transparent;
 }
 
-.footer__form {
+.subscribe__form {
   margin-left: auto;
 }
 
-.footer-form {
+.subscribe-form {
   display: flex;
 }

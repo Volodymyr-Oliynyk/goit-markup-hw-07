@@ -1,8 +1,8 @@
-.contact__list {
+.contact-list {
   display: flex;
   margin-left: auto;
 
-  & .contact-list__item + .contact-list__item {
+  &__item:not(:first-child) {
     margin-left: 50px;
   }
 }
