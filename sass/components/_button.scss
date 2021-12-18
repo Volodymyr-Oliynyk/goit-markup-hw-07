@@ -1,10 +1,5 @@
-button {
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
 .primary-button {
+  @extend %button;
   min-width: 200px;
   min-height: 50px;
   margin: 0 auto;
@@ -32,6 +27,7 @@ button {
   fill: currentColor;
 }
 .secondary-button {
+  @extend %button;
   padding: 6px 22px;
   text-align: center;
 

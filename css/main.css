@@ -57,7 +57,7 @@ ul {
   justify-content: center;
 }
 
-button {
+.primary-button, .secondary-button {
   border: none;
   border-radius: 4px;
   cursor: pointer;
