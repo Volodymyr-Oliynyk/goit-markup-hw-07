@@ -6,20 +6,20 @@
     display: flex;
     align-items: center;
   }
-}
 
-.footer__social {
-  margin-left: 70px;
-}
+  &__social {
+    margin-left: 70px;
+  }
 
-.footer__title {
-  margin-bottom: 20px;
-  margin-right: auto;
+  &__title {
+    margin-bottom: 20px;
+    margin-right: auto;
 
-  @include font(700, 14px, 1.14, 0.03em);
-  text-transform: uppercase;
+    @include font(700, 14px, 1.14, 0.03em);
+    text-transform: uppercase;
 
-  color: $secondary-color;
+    color: $secondary-color;
+  }
 }
 
 .subscribe__input {

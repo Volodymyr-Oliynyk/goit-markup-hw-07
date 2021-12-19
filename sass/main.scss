@@ -2,8 +2,7 @@
 @import './utils/placeholders';
 @import './utils/mixins';
 
-@import './components/reset';
-@import './components/container';
+@import './components/common';
 @import './components/section';
 @import './components/buttons';
 @import './components/header';
@@ -20,6 +19,6 @@
 @import './components/filter-list';
 @import './components/projects';
 @import './components/footer';
-@import './components/adress';
+@import './components/address';
 @import './components/modal';
 @import './components/inputs';

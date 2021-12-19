@@ -1,15 +1,3 @@
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-
-body {
-  background-color: #ffffff;
-  font-family: Roboto, sans-serif;
-  color: #212121;
-}
-
 .primary-button--flex, .contact-list__link, .social-list__link, .checkbox-field__label {
   display: flex;
   align-items: center;
@@ -35,6 +23,18 @@ ul {
   padding: 0;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  background-color: #ffffff;
+  font-family: Roboto, sans-serif;
+  color: #212121;
+}
+
 .list {
   list-style: none;
 }
@@ -53,7 +53,7 @@ ul {
   padding: 94px 0;
 }
 
-.section .section__title {
+.section__title {
   margin-bottom: 50px;
   text-align: center;
   font-weight: 700;
@@ -102,7 +102,7 @@ ul {
   background-color: #2196f3;
 }
 
-.close__button {
+.close-button {
   position: absolute;
   display: flex;
   align-items: center;
@@ -115,12 +115,12 @@ ul {
   background-color: transparent;
 }
 
-.close__button .close__icon-button {
+.close-button .close-button__icon {
   fill: #212121;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.close__button .close__icon-button:hover, .close__button .close__icon-button:focus {
+.close-button .close-button__icon:hover, .close-button .close-button__icon:focus {
   fill: #2196f3;
 }
 
@@ -142,7 +142,7 @@ ul {
   color: #212121;
 }
 
-.logo .logo__web {
+.logo__web {
   color: #2196f3;
 }
 
@@ -155,16 +155,20 @@ ul {
   margin-left: 93px;
 }
 
-.nav .nav__list {
+.nav__list {
   display: flex;
   color: #212121;
 }
 
-.nav__list .link.nav__link--current {
+.nav__item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.nav__link--current {
   color: #2196f3;
 }
 
-.nav__list .link.nav__link--current::after {
+.nav__link--current::after {
   content: '';
   width: 100%;
   height: 4px;
@@ -173,10 +177,6 @@ ul {
   position: absolute;
   left: 0;
   bottom: -1px;
-}
-
-.nav__item:not(:last-child) {
-  margin-right: 50px;
 }
 
 .nav__link {
@@ -235,7 +235,7 @@ ul {
   background-position: center;
 }
 
-.hero .hero__title {
+.hero__title {
   text-align: center;
   margin: 0 auto 30px auto;
   max-width: 696px;
@@ -252,21 +252,21 @@ ul {
   margin: 0 auto;
 }
 
-.skills-list .skills-list__item:not(:last-child) {
+.skills-list__item:not(:last-child) {
   margin-right: 30px;
 }
 
-.skills-list .skills-list__icon-wraper {
+.skills-list__icon-wraper {
   padding: 25px 100px;
   border-radius: 4px;
   background: #f5f4fa;
 }
 
-.skills-list .skills-list__icon {
+.skills-list__icon {
   display: block;
 }
 
-.skills-list .skills-list__title {
+.skills-list__title {
   margin-top: 30px;
   margin-bottom: 10px;
   font-weight: 700;
@@ -277,7 +277,7 @@ ul {
   color: #212121;
 }
 
-.skills-list .skills-list__text {
+.skills-list__text {
   max-width: 270px;
   font-weight: 400;
   font-size: 14px;
@@ -294,15 +294,15 @@ ul {
   display: flex;
 }
 
-.service-list .service-list__item:not(:last-child) {
-  margin-right: 30px;
-}
-
-.service-list .service-list__block {
+.service-list__item {
   position: relative;
 }
 
-.service-list .service-list__title-overlay {
+.service-list__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.service-list__title-overlay {
   position: absolute;
   left: 0;
   bottom: 0;
@@ -312,7 +312,7 @@ ul {
   background-color: rgba(47, 48, 58, 0.8);
 }
 
-.service-list .service-list__title {
+.service-list__title {
   text-align: center;
   font-weight: 700;
   font-size: 14px;
@@ -341,12 +341,12 @@ ul {
 
 .teammate {
   text-align: center;
-  padding: 30px 0;
+  padding: 30px 32px;
   border-radius: 0px 0px 4px 4px;
   background-color: #ffffff;
 }
 
-.teammate .teammate__name {
+.teammate__name {
   margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
@@ -355,7 +355,7 @@ ul {
   color: #212121;
 }
 
-.teammate .teammate__position {
+.teammate__position {
   margin-bottom: 16px;
   font-weight: 400;
   font-size: 16px;
@@ -366,10 +366,9 @@ ul {
 
 .social-list {
   display: flex;
-  justify-content: center;
 }
 
-.social-list .social-list__item + .social-list__item {
+.social-list__item + .social-list__item {
   margin-left: 10px;
 }
 
@@ -387,7 +386,7 @@ ul {
   background-color: #2196f3;
 }
 
-.social-list__link .social-list__icon {
+.social-list__icon {
   fill: currentColor;
 }
 
@@ -423,7 +422,7 @@ ul {
   border-color: #2196f3;
 }
 
-.clients-list__link .clients-list__icon {
+.clients-list__icon {
   fill: currentColor;
 }
 
@@ -637,10 +636,6 @@ ul {
   color: #212121;
 }
 
-.input-field {
-  margin-bottom: 10px;
-}
-
 .label {
   display: block;
   font-weight: 400;
@@ -649,6 +644,10 @@ ul {
   letter-spacing: 0.01em;
   margin-bottom: 4px;
   color: #757575;
+}
+
+.input-field {
+  margin-bottom: 10px;
 }
 
 .input-group-absolute {
@@ -691,7 +690,7 @@ ul {
   margin-bottom: 20px;
 }
 
-.textarea-field-input {
+.textarea-field__input {
   min-height: 120px;
   padding: 12px 16px;
   resize: none;
@@ -706,17 +705,30 @@ ul {
   background-color: transparent;
 }
 
-.textarea-field-input::placeholder {
+.textarea-field__input::placeholder {
   color: rgba(117, 117, 117, 0.5);
 }
 
-.textarea-field-input:hover, .textarea-field-input:focus {
+.textarea-field__input:hover, .textarea-field__input:focus {
   border-color: #2196f3;
 }
 
 .checkbox-field {
   display: flex;
   margin-bottom: 30px;
+}
+
+.checkbox-field__input {
+  visibility: hidden;
+}
+
+.checkbox-field__input:checked + .checkbox-field__label .checkbox-field__icon-wraper {
+  background-color: #2196f3;
+  border: none;
+}
+
+.checkbox-field__icon {
+  fill: #ffffff;
 }
 
 .checkbox-field__link {
@@ -732,7 +744,7 @@ ul {
   color: #757575;
 }
 
-.checkbox-field__label .checkbox-field__icon-wraper {
+.checkbox-field__icon-wraper {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -741,18 +753,5 @@ ul {
   border: 2px solid #212121;
   border-radius: 2px;
   margin-right: 6px;
-}
-
-.checkbox-field__input {
-  visibility: hidden;
-}
-
-.checkbox-field__icon {
-  fill: #ffffff;
-}
-
-.checkbox-field__input:checked + .checkbox-field__label .checkbox-field__icon-wraper {
-  background-color: #2196f3;
-  border: none;
 }
 /*# sourceMappingURL=main.css.map */

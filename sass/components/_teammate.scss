@@ -1,18 +1,18 @@
 .teammate {
   text-align: center;
-  padding: 30px 0;
+  padding: 30px 32px;
 
   border-radius: 0px 0px 4px 4px;
 
   background-color: $secondary-color;
 
-  .teammate__name {
+  &__name {
     margin-bottom: 10px;
     @include font(500, 16px, 1.19, 0.03em);
     color: $primary-color;
   }
 
-  .teammate__position {
+  &__position {
     margin-bottom: 16px;
 
     @include font(400, 16px, 1.19, 0.03em);

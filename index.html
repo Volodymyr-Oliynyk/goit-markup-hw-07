@@ -56,7 +56,9 @@
     <main>
       <section class="hero">
         <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
-        <button type="button" class="primary-button" data-modal-open>Заказать услугу</button>
+        <button type="button" class="primary-button primary-button--block" data-modal-open>
+          Заказать услугу
+        </button>
       </section>
 
       <section class="section">
@@ -115,45 +117,39 @@
           <h2 class="section__title">Чем мы занимаемся</h2>
           <ul class="service-list list">
             <li class="service-list__item">
-              <div class="service-list__block">
-                <img
-                  class="service-list__image"
-                  src="img/write.jpg"
-                  alt="печатают на клавиатуре"
-                  width="370"
-                  height="294"
-                />
-                <div class="service-list__title-overlay">
-                  <h3 class="service-list__title">Десктопные приложения</h3>
-                </div>
+              <img
+                class="service-list__image"
+                src="img/write.jpg"
+                alt="печатают на клавиатуре"
+                width="370"
+                height="294"
+              />
+              <div class="service-list__title-overlay">
+                <h3 class="service-list__title">Десктопные приложения</h3>
               </div>
             </li>
             <li class="service-list__item">
-              <div class="service-list__block">
-                <img
-                  class="service-list__image"
-                  src="./img/modile.jpg"
-                  alt="проверяет мобильный"
-                  width="370"
-                  height="294"
-                />
-                <div class="service-list__title-overlay">
-                  <h3 class="service-list__title">Мобильные приложения</h3>
-                </div>
+              <img
+                class="service-list__image"
+                src="./img/modile.jpg"
+                alt="проверяет мобильный"
+                width="370"
+                height="294"
+              />
+              <div class="service-list__title-overlay">
+                <h3 class="service-list__title">Мобильные приложения</h3>
               </div>
             </li>
             <li class="service-list__item">
-              <div class="service-list__block">
-                <img
-                  class="service-list__image"
-                  src="./img/color.jpg"
-                  alt="цветовая сетка"
-                  width="370"
-                  height="294"
-                />
-                <div class="service-list__title-overlay">
-                  <h3 class="service-list__title">Дизайнерские решения</h3>
-                </div>
+              <img
+                class="service-list__image"
+                src="./img/color.jpg"
+                alt="цветовая сетка"
+                width="370"
+                height="294"
+              />
+              <div class="service-list__title-overlay">
+                <h3 class="service-list__title">Дизайнерские решения</h3>
               </div>
             </li>
           </ul>
@@ -476,8 +472,8 @@
     <!-- Modal window -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button class="close__button" data-modal-close>
-          <svg class="close__icon-button" width="18" height="18">
+        <button class="close-button" data-modal-close>
+          <svg class="close-button__icon" width="18" height="18">
             <use href="./img/icons.svg#close-black"></use>
           </svg>
         </button>
@@ -539,12 +535,19 @@
               placeholder="Введите текст"
               title="Введите текст"
               id="user-coment"
-              class="textarea-field-input"
+              class="textarea-field__input"
             ></textarea>
           </div>
 
           <div class="checkbox-field">
-            <input type="checkbox" name="policy" id="label-check" class="checkbox-field__input" />
+            <input
+              type="checkbox"
+              name="policy"
+              id="label-check"
+              class="checkbox-field__input"
+              width="0"
+              height="0"
+            />
             <label for="label-check" class="checkbox-field__label">
               <span class="checkbox-field__icon-wraper">
                 <svg class="checkbox-field__icon" width="16" height="15">

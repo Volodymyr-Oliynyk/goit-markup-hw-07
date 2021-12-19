@@ -2,11 +2,11 @@
   display: flex;
   margin: 0 auto;
 
-  .skills-list__item:not(:last-child) {
+  &__item:not(:last-child) {
     margin-right: 30px;
   }
 
-  .skills-list__icon-wraper {
+  &__icon-wraper {
     padding: 25px 100px;
 
     border-radius: 4px;
@@ -14,11 +14,11 @@
     background: $secondary-background-color;
   }
 
-  .skills-list__icon {
+  &__icon {
     display: block;
   }
 
-  .skills-list__title {
+  &__title {
     margin-top: 30px;
     margin-bottom: 10px;
 
@@ -29,7 +29,7 @@
     color: $primary-color;
   }
 
-  .skills-list__text {
+  &__text {
     max-width: 270px;
 
     @include font(400, 14px, 1.71, 0.03em);

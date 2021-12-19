@@ -1,32 +1,32 @@
 .clients-list {
   display: flex;
-}
 
-.clients-list__item {
-  flex-basis: calc(100 / 6);
+  &__item {
+    flex-basis: calc(100 / 6);
+  }
 
-  &:not(:last-child) {
+  &__item:not(:last-child) {
     margin-right: 30px;
   }
-}
 
-.clients-list__link {
-  display: flex;
-  padding: 16px 35px;
+  &__link {
+    display: flex;
+    padding: 16px 35px;
 
-  border: 1px solid $icon-color;
-  border-radius: 4px;
-  color: $icon-color;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    border: 1px solid $icon-color;
+    border-radius: 4px;
+    color: $icon-color;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
 
-  &:hover,
-  &:focus {
+  &__link:hover,
+  &__link:focus {
     color: $accent-color;
     border-color: $accent-color;
   }
 
-  .clients-list__icon {
+  &__icon {
     fill: currentColor;
   }
 }

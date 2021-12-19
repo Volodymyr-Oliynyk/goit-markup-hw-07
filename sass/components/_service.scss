@@ -5,15 +5,15 @@
 .service-list {
   display: flex;
 
-  .service-list__item:not(:last-child) {
-    margin-right: 30px;
-  }
-
-  .service-list__block {
+  &__item {
     position: relative;
   }
 
-  .service-list__title-overlay {
+  &__item:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  &__title-overlay {
     position: absolute;
     left: 0;
     bottom: 0;
@@ -23,7 +23,7 @@
     background-color: $background-color-servis-block;
   }
 
-  .service-list__title {
+  &__title {
     text-align: center;
     @include font(700, 14px, 1.14, 0.03em);
 
