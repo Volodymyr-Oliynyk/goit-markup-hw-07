@@ -1,7 +1,7 @@
 .social-list {
   display: flex;
 
-  &__item + &__item {
+  &__item:not(:first-child) {
     margin-left: 10px;
   }
 
