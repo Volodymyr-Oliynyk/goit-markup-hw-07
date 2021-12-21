@@ -37,7 +37,7 @@
     transform: translateY(100%);
     transition: transform 250ms;
 
-    background-color: $backgraund-color-wrap;
+    background-color: rgba($accent-color, 0.9);
   }
 
   &__description {
